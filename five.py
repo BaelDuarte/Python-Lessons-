@@ -1,13 +1,12 @@
-start_celebrate = input('welcome to birthday celebrator, want to start? (y/n): ')
-if (start_celebrate == 'y'):
-    day_birth = input('insert your birth date (day): ')
-    month_birth = input('insert your birth date (month): ')
-    year_birth = input('insert your birth date (year): ')
-    print('you were bornt on ' +  month_birth ,  day_birth + ',' , year_birth )
-elif (start_celebrate == 'n'):
+while repeat == True:
+    start_program = input('welcome to ultimate two numbers summator v0.1, want to start? (y/n): ')
+    if (start_program == 'y'):
+        repeat == False
+    first_number = input('insert the first number: ')
+    second_number = input('insert the second number: ')
+    result = int(first_number) + int(second_number)
+    print('the result is:', result)
+elif (start_program == 'n'):
     print('ok, shutting down the program...')
 else:
     print('invalid format, shutting down the program...')
-
-    
-
