@@ -1,3 +1,4 @@
+# sourcery skip: use-fstring-for-concatenation
 start_celebrate = input('welcome to birthday celebrator, want to start? (y/n): ')
 if (start_celebrate == 'y'):
     day_birth = input('insert your birth date (day): ')
