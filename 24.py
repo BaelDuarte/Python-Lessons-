@@ -1,8 +1,11 @@
-import playsound
-start_program = input('welcome to play a sound!, want to start? (y/n): ')
+import pygame
+pygame.mixer.init()
+start_program = input('welcome to ultimate metal pipe sound effect reproducer, want to start? (y/n): ')
 if start_program == 'y':
-    user_input = input('insert the path MP3 file: ')
-    playsound('Este computador/Área de Trabalho/Tudo/Audios')
+    print('loading the sound...')
+    pygame.mixer.music.load('Metal pipe.mp3')
+    pygame.mixer.music.play()
+    pygame.event.wait()
 elif start_program == 'n':
     print('ok, shutting down the program...')
 else:
